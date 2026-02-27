@@ -1,0 +1,11 @@
+server: your.vps.domain⚠️:443 
+
+auth: your_password⚠️
+
+bandwidth: 
+  up: 20 mbps
+  down: 100 mbps
+
+socks5:
+  listen: 127.0.0.1:10808
+

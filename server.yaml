@@ -1,0 +1,16 @@
+listen: :443 
+
+tls:
+  cert: /etc/letsencrypt/live/your.vps.domain⚠️/fullchain.pem 
+  key: /etc/letsencrypt/live/your.vps.domain⚠️/privkey.pem
+
+auth:
+  type: password
+  password: your_password⚠️
+
+masquerade:
+  type: proxy
+  proxy:
+    url: https://www.real.site/⚠️
+    rewriteHost: true
+
