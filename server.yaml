@@ -14,3 +14,8 @@ masquerade:
     url: https://www.real.site/⚠️
     rewriteHost: true
 
+resolver:
+  type: udp
+  udp:
+    addr: 8.8.4.4:53 
+    timeout: 4s
