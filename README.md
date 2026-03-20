@@ -9,7 +9,7 @@ Based on [Hysteria](https://github.com/apernet/hysteria).
 `curl -sSL https://get.docker.com | sh && usermod -aG docker $(whoami)`
 ### Run Docker container
 `docker run -d -p 443:443/udp --name hysteria --restart=always -v /root/hysteria:/etc/hysteria -v /etc/letsencrypt/:/etc/letsencrypt/ --log-opt max-size=10m --log-opt max-file=5 teddysun/hysteria`
-### Get and edit the [client.yaml](https://raw.githubusercontent.com/rustamft/hysteria-vps/refs/heads/main/client.yaml?token=GHSAT0AAAAAADTSULNQ2HBWHJ62AK2YM6IK2NGUYRQ)
+### Get and edit the [client.yaml](https://raw.githubusercontent.com/rustamft/hysteria-vps/refs/heads/main/server.yaml?token=GHSAT0AAAAAADTSULNQWQDA5SXJOY3ICL3C2N5DCCQ)
 
 ## Setup client
 - Android: [NekoBoxForAndroidPublic](https://github.com/MatsuriDayo/NekoBoxForAndroid) (for geosite routing replace "ru" with "category-ru")
