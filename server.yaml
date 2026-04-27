@@ -1,7 +1,7 @@
-listen: :443 
+listen: :443
 
 tls:
-  cert: /etc/letsencrypt/live/your.vps.domain⚠️/fullchain.pem 
+  cert: /etc/letsencrypt/live/your.vps.domain⚠️/fullchain.pem
   key: /etc/letsencrypt/live/your.vps.domain⚠️/privkey.pem
 
 auth:
@@ -17,5 +17,5 @@ masquerade:
 resolver:
   type: udp
   udp:
-    addr: 8.8.4.4:53 
+    addr: 8.8.4.4:53
     timeout: 4s
