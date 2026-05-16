@@ -3,7 +3,7 @@ Based on [Hysteria](https://github.com/apernet/hysteria).
 ### Create TLS-certificsates for your domain and starts a service to update them
 `apt update && apt install -y certbot && certbot certonly --register-unsafely-without-email --standalone -d your.vps.domain⚠️ && systemctl enable certbot.timer && systemctl start certbot.timer`
 ### Create the server config
-`mkdir -p hysteria && cd hysteria && wget https://raw.githubusercontent.com/rustamft/hysteria-vps/refs/heads/main/server.yaml?token=GHSAT0AAAAAADTSULNQWQDA5SXJOY3ICL3C2N5DCCQ`
+`mkdir -p hysteria && cd hysteria && wget bit.ly/hysteria-server -O server.yaml`
 ### Edit downloaded server.yaml file
 ### Install Docker
 `curl -sSL https://get.docker.com | sh && usermod -aG docker $(whoami)`
