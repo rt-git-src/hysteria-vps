@@ -6,7 +6,12 @@ tls:
 
 auth:
   type: password
-  password: your_password⚠️
+  password: your_auth_password⚠️
+
+obfs:
+  type: salamander 
+  salamander:
+    password: your_obfs_password⚠️
 
 masquerade:
   type: proxy
