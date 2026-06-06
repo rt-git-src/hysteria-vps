@@ -1,14 +1,15 @@
 Based on [Hysteria](https://github.com/apernet/hysteria).
 ## Setup VPS
 ### Create TLS-certificsates for your domain and starts a service to update them
-`apt update && apt install -y certbot && certbot certonly --register-unsafely-without-email --standalone -d your.vps.domain⚠️ && systemctl enable certbot.timer && systemctl start certbot.timer`
+`apt update && apt upgrade -y && apt install -y certbot && certbot certonly --register-unsafely-without-email --standalone -d your.vps.domain⚠️ && systemctl enable certbot.timer && systemctl start certbot.timer`
 ### Create the server config
-`mkdir -p hysteria && cd hysteria && wget bit.ly/hysteria-server -O server.yaml`
+`mkdir -p ./docker/hysteria && cd ./docker/hysteria && wget bit.ly/hysteria-server -O server.yaml`
 ### Edit downloaded server.yaml file
 ### Install Docker
 `curl -sSL https://get.docker.com | sh && usermod -aG docker $(whoami)`
 ### Run Docker container
-`docker run -d -p 443:443/udp --name hysteria --restart=always -v /root/hysteria:/etc/hysteria -v /etc/letsencrypt/:/etc/letsencrypt/ --log-opt max-size=10m --log-opt max-file=5 teddysun/hysteria`
+- directly `docker run -d -p 443:443/udp --name hysteria --restart=always -v ${HOME}/docker/hysteria:/etc/hysteria -v /etc/letsencrypt/:/etc/letsencrypt/ --log-opt max-size=10m --log-opt max-file=5 teddysun/hysteria`
+- via [docker-compose.yaml](https://github.com/rt-git-src/docker-compose-vps)
 ### Get and edit the [client.yaml](https://raw.githubusercontent.com/rustamft/hysteria-vps/refs/heads/main/client.yaml?token=GHSAT0AAAAAADTSULNQMUAONZN3E3BUHHWO2N5DJNQ)
 
 ## Setup client
