@@ -1,11 +1,11 @@
-server: your.vps.domain⚠️:443 
+server: your.vps.domain:443 # change this
 
-auth: your_auth_password⚠️
+auth: your_auth_password # change this
 
 obfs:
   type: salamander 
   salamander:
-    password: your_obfs_password⚠️
+    password: your_obfs_password # change this
 
 bandwidth: 
   up: 20 mbps
