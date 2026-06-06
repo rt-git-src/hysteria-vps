@@ -15,4 +15,4 @@ Based on [Hysteria](https://github.com/apernet/hysteria).
 ## Setup client
 - Android: [NekoBoxForAndroidPublic](https://github.com/MatsuriDayo/NekoBoxForAndroid) (for geosite routing replace "ru" with "category-ru")
 - iOS: [Happ](https://apps.apple.com/us/app/happ-proxy-utility/id6504287215), [Streisand](https://apps.apple.com/us/app/streisand/id6450534064)
-- Windows: [Throne](https://github.com/throneproj/Throne)
+- Windows: [Direct](https://github.com/apernet/hysteria/releases), [Throne](https://github.com/throneproj/Throne)
